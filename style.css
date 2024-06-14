@@ -1,0 +1,391 @@
+@font-face {
+    font-family: 'manrope-regular';
+    src: url('assets/fonts/manrope-regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'manrope-bold';
+    src: url('assets/fonts/manrope-bold.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+:root {
+    --button-color: #01F0D0;
+    --white: #fff;
+    --light-theme-color: #D8FCF7;
+    --grey: #F6F7F8;
+}
+
+html {
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background: #F6F7F8 0% 0% no-repeat padding-box;
+    font-family: 'manrope-regular', sans-serif;
+}
+
+header {
+    height: 72px;
+    width: calc(100vw - 36px);
+    position: relative;
+    top: 18px;
+    margin: auto;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 72px;
+
+}
+
+.header-logo {
+    background-color: var(--white);
+
+}
+
+
+
+header .header-nav nav ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    list-style: none;
+}
+.Patientsy{
+    background-color:#01f0d0d2;
+    border-radius: 7px;
+}
+.header-nav nav ul img{
+    height:13px;
+    margin-right:5px;
+}
+.senior-woman{
+   justify-content: space-between;
+   display: flex;
+   flex-direction:row;
+   gap: 10px;
+   height:40px;
+   text-align: left;
+   margin-left:40px;
+  
+}
+.Practictional{
+    border-right:1px solid rgba(0, 0, 0, 0.147);
+}
+.Practictional h3{
+    font-size: 16px;
+    height: 15px;
+    flex-direction: row;
+}
+.Practictional span{
+    height:19px;
+    width:129px;
+    font-size:14px;
+}
+.settings{
+   margin-top:10px;
+   margin-right: 5px;
+
+}
+.vert img{
+    height:15px;
+    width:5px;
+    margin-top:12px;;
+}
+
+
+.body-wrapper .container {
+    width: calc(100vw - 36px);
+    margin: auto;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0.8rem;
+    background-color: rgba(0, 0, 0, 0);
+    
+    
+}
+
+.body-wrapper .container .left-sidebar {
+    background-color: var(--white);
+    border-radius: 1rem;
+    width: 20%;
+    overflow-y:scroll;
+    position:absolute;
+    height: 150vh;
+
+    
+    
+}
+
+.body-wrapper .container .left-sidebar .sidebar-header {
+    width: calc(100% - 1.4rem);
+    margin: auto;
+    padding: 0.7rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    font-size: 1rem;
+    font-family: manrope-bold;
+}
+
+.body-wrapper .container .left-sidebar .chat-list .chat-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 3.5rem;
+    padding: 1rem;
+}
+
+.body-wrapper .container .left-sidebar .chat-list .chat-box.active {
+    background-color: var(--light-theme-color);
+}
+
+.body-wrapper .container .left-sidebar .chat-box .profile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.body-wrapper .container .left-sidebar .chat-box .user-details h3{
+    font-size: 0.7rem;
+    font-family: manrope-bold;
+    letter-spacing: 0.1rem;
+}
+
+.body-wrapper .container .right-sidebar {
+    background-color: var(--white);
+    border-radius: 1rem;
+    width: 20%;
+    overflow-y: auto;
+    position: relative;
+        
+}
+
+.body-wrapper .container .right-sidebar .user-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 1rem;
+
+}
+
+.body-wrapper .container .right-sidebar .user-details .name {
+    font-weight: bold;
+}
+
+.body-wrapper .container .right-sidebar .comprehensive-details {
+    width: 90%;
+    margin: auto;
+}
+
+.body-wrapper .container .right-sidebar .comprehensive-details .inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 0.8rem;
+    width: 90%;
+    margin: auto;
+    margin: 1rem 0;
+
+}
+
+.body-wrapper .container .right-sidebar .comprehensive-details .inner .info {
+    display: flex;
+    flex-direction: column;
+}
+
+.body-wrapper .container .right-sidebar .comprehensive-details button {
+    height: 45px;
+    border: none;
+    border-radius: 48px;
+    width: 100%;
+    background: var(--button-color);
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+
+}
+.container{
+    background-color: rgba(0, 0, 0, 0);
+    width: 60%;
+    margin-bottom: 70px;
+}
+.contain{
+    width:80%;
+    background-color: #fff;
+    border-radius: 10px;
+   margin-left:10px;
+   padding-top: 15px;
+}
+.center-body{
+    width:60%;
+    text-align: center;
+    overflow-y: auto;
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid #00000011;
+    margin-left: 280px;
+    
+
+}
+.center-body h3{
+    float: left;
+}
+.chart-wrapper h4{
+    float: left;
+} 
+.lab-result-section{
+    margin-top:20px;
+    border-top:20px solid #0e0c0c05;
+    border-radius: 4px;
+    
+}
+.lab-result-section h2{
+    font-size: 20px;
+    text-align: left;
+    padding: 12px;
+    margin-bottom: 4px;
+}
+.diagnosis{
+    width:50%;
+    height:50px;
+    margin-left: 300px;
+    background-color:#fff;
+    margin-top: 70px;
+    border-radius: 10px;
+    
+    
+}
+.chart-wrapper{
+    background-color: #f4f4f4;
+    margin-top: 30px;
+   
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+td {
+    border-bottom: 1px solid #fff;
+    padding: 8px;
+    text-align: left;
+}
+thead {
+    background-color: #f4f4f4;
+    height: 40px;
+    margin-left: 10px;
+}
+.padding-box{
+    display: flex;
+    margin-top: 3.0rem;
+    margin: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+    height: 250px;
+    width:700px;
+    margin-left: 280px;
+}
+.respiratory{
+    background-color:#01f0d048; 
+    height: 240px; 
+    width: 100%;
+    border-radius: 10px;
+}
+.respiratory img{
+    padding-left:10px;
+    padding-top: 10px;
+    
+}
+.respiratory h3{
+    font-size: 15px;
+    padding-left: 12px;
+    font-weight:lighter;
+
+}
+.respiratory span{
+    margin-top:20px;
+    font-size:30px;
+    padding-left:10px ;
+
+}
+.respiratory p{
+    padding-top: 20px;
+    padding-left: 10px;
+}
+.temperature{
+    height: 200px; 
+    width: 100%;
+    background-color: rgba(255, 192, 203, 0.601);
+    height: 240px;
+    border-radius: 10px;
+}
+.temperature img{
+    padding-left:10px;
+    padding-top: 10px;
+
+}
+.temperature h3{
+    font-size: 15px;
+    padding-left: 12px;
+    font-weight:lighter;
+}
+.temperature span{
+    margin-top:20px;
+    font-size:30px;
+    padding-left:10px ;
+}
+.temperature p{
+    padding-top: 20px;
+    padding-left: 10px;
+
+}
+.heart-beat{
+    height: 200px; 
+    width: 100%; 
+    height:240px;
+    background-color:rgba(255, 192, 203, 0.583);
+    border-radius:10px;
+}
+.heart-beat img{
+    padding-left:10px;
+    padding-top: 10px;
+}
+.heart-beat h3{
+    font-size: 15px;
+    padding-left: 12px;
+    font-weight:lighter;
+}
+.heart-beat span{
+    margin-top:20px;
+    font-size:30px;
+    padding-left:10px;
+}
+.heart-beat p{
+    padding-top: 20px;
+    padding-left: 10px;
+}
+.test{
+    padding: 5px;
+    margin-bottom: 120px;
+    padding-bottom: 80px;
+}

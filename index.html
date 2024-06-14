@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+    </link>
+</head>
+
+<body>
+    <header>
+        <div class="header-logo"><img src="assets/images/TestLogo.png" alt="" /></div>
+        <div class="header-nav">
+            <nav>
+                <ul class="nav">
+                    <li>
+                        <div><img src="assets/home_FILL0_wght300_GRAD0_opsz24@2x.png" alt="" /><span>Overview</span>
+                        </div>
+                    </li>
+                    <li class="Patientsy">
+                        <div><img src="assets/group_FILL0_wght300_GRAD0_opsz24.png" alt="" /><span>Patients</span></div>
+                    </li>
+                    <li>
+                        <div><img src="assets/calendar_today_FILL0_wght300_GRAD0_opsz24.png"
+                                alt="" /><span>Schedule</span></div>
+                    </li>
+                    <li>
+                        <div><img src="assets/chat_bubble_FILL0_wght300_GRAD0_opsz24.png" alt="" /><span>Message</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div><img src="assets/credit_card_FILL0_wght300_GRAD0_opsz24@2x.png"
+                                alt="" /><span>Transactions</span></div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="senior-woman">
+            <div class="Simmons">
+                <img src="assets/images/senior-woman-doctor-and-portrait-smile-for-health-2023-11-27-05-18-16-utc.png"
+                    alt="" />
+            </div>
+            <div class="Practictional">
+                <h3>Dr. Jose Simmons</h3>
+                <span>General Practictional</span>
+            </div>
+            <div class="settings">
+                <img src="assets/images/settings_FILL0_wght300_GRAD0_opsz24.png" alt="" />
+            </div>
+            <div class="vert">
+                <img src="assets/images/more_vert_FILL0_wght300_GRAD0_opsz24@2x.png" alt="" />
+            </div>
+        </div>
+    </header>
+
+    <section class="body-wrapper">
+        <div class="container">
+            <div class="left-sidebar">
+                <div class="sidebar-header">
+                    <span>Patients</span>
+                    <div><img src="assets/images/search_FILL0_wght300_GRAD0_opsz24.png" alt="" /></div>
+                </div>
+                <div class="chat-list">
+
+                </div>
+            </div>
+            <div class="contain">
+                
+                
+                    <div class="center-body">
+                        <h3>Diagnosis History</h3><br />
+                        
+                        <div class="chart-wrapper">
+                            <div class="" style="display: flex; flex-direction: row; justify-content: space-between; width: 100%;">
+                                <h4>Blood Pressure</h4>
+                                <div><span>Last six month</span></div>
+                            
+                            </div>
+                            <canvas id="myChart"></canvas>
+                        </div>
+                    </div>
+
+                        <div class="padding-box">
+                            <div class="respiratory"><img src="assets/images/respiratory rate.png"></img> <h3>Respiratory rate</h3><span><b>20 bpm</b></span><p>Normal</p></div>
+                            <div class="temperature"> <img src="assets/images/temperature.png"></img> <h3>Temperature rate</h3><span><b>98&deg;F</b></span><br/><p>normal</p></div>
+                            <div class="heart-beat"><img src="assets/images/HeartBPM.png"></img><h3>Heart beat</h3><span><b>78bpm</b></span><br/><p>lower than avarage</p></div>
+                        </div>
+                      
+                    
+                
+
+
+
+                <div class="diagnosis">
+                    <h1>Diagnosis Information</h1>
+                    <table id="diagnosisTable">
+                        <thead>
+                            <tr>
+                                <th>Problem</th>
+                                <th>Description</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Data will be inserted here -->
+                        </tbody>
+                    </table>
+                </div>
+                
+                
+
+
+
+
+
+                <div>
+
+                </div>
+            </div>
+
+            <div class="right-sidebar">
+
+            </div>
+        
+
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+    <script>
+        const ctx = document.getElementById('myChart').getContext('2d');
+        const myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['oct  2023', 'nov 2023', 'Dec 2023', 'Jan 2024', 'Feb 2024', 'March 2024'],
+                datasets: [{
+                    label: 'Blood Pressure',
+                    data: [65, 59, 80, 81, 56, 55, 40],
+                    backgroundColor: 'rgba(80,120,120,2)',
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 1,
+                    tension: 0.4
+                },
+                {
+                    label: 'heart beat',
+                    data: [175, 89, 40, 21, 86, 25, 80],
+                    backgroundColor: 'rgba(23, 67, 23, 0.2)',
+                    borderColor: 'rgba(45, 23, 12, 1)',
+                    borderWidth: 1,
+                    tension: 0.4
+                },
+                ]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+        //const myChart = new Chart(ctx, { ...});
+    </script>
+    <script src="index.js">
+
+    </script>
+    <script src="script.js">
+
+    </script>
+</body>
+
+</html>
